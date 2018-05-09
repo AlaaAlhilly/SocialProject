@@ -30,7 +30,7 @@ if(isset($_SESSION['username'])){
     		</div>
 
     		<nav>
-    			<a href="#"><?php echo $user['first_name']?></i></a>
+    			<a href="<?php echo $userLoggedIn;?>"><?php echo $user['first_name']?></i></a>
     			<a href="index.php">
     				<i class="fa fa-home fa-lg"></i>
     			</a>
@@ -38,5 +38,9 @@ if(isset($_SESSION['username'])){
     			<a href=""><i class="fas fa-bell-o fa-lg"></i></a>
     			<a href=""><i class="fas fa-users fa-lg"></i></a>
     			<a href=""><i class="fas fa-cog fa-lg"></i></a>
+    			<a href="includes/handlers/logout.php">
+    				<i class="fas fa-sign-out-alt fa-lg"></i></a>
     		</nav>
-    	</div>
+    	 </div>
+
+    	 <div class="wrapper">

@@ -95,9 +95,9 @@ if(isset($_POST['reg_button'])){
 		//Profile picture assignment
 		$rand=rand(1,2);//random number
 		if($rand==1){
-			$profile_pic="assest/images/head_deep_blue.png";
+			$profile_pic="assests/images/head_deep_blue.png";
 		}else{
-			$profile_pic="assest/images/head_emerald.png";
+			$profile_pic="assests/images/head_emerald.png";
 		}
 		$query=mysqli_query($con,"INSERT INTO users VALUES('','$fname','$lname','$username','$em','$password','$date','$profile_pic','0','0','no',',')");
 		array_push($errors_array,"<span style='color:#14c800'>You're all set! Goahead and login!</span><br>");
